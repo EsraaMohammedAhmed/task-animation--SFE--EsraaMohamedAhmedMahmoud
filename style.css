@@ -1,68 +1,114 @@
+img {
+    width: 10%;
+    display: flex;
+}
+
 body {
     margin: 0;
-    overflow: hidden; 
+    overflow: hidden;
     padding: 0;
     box-sizing: border-box;
+    background-image: url("./istojpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    height: 100svh;
+    background-color: rgb(3, 3, 37);
+
 }
 
 .section1 {
-    position: relative; 
-    height: 200px; 
+    position: relative;
+    height: 200px;
 }
 
-.div1, .div2 ,.div3 , .div4 {
-    width: 30%;
-    height: 50px; 
-    color: white; 
-    line-height: 50px; 
-    text-align: center; 
+.game-image {
+    width: 5%;
+    height: auto;
     position: absolute;
+    object-fit: cover;
 }
 
 .div1 {
-    background-color: red; 
-    animation: moveToRight 6s  alternate forwards ;
-    top: 20%;
-    right: 70%;
-}
 
-.div2{
-    background-color: aqua; 
-    right: 0; 
-    animation: moveToLeft 6s  3s alternate forwards ; 
-    top: 50%;
+    animation: moveToRight 6s alternate forwards;
+    top: 2%;
+    left: 11%;
+
 }
 
 
-.div3{
-    background-color: rgb(0, 17, 255); 
-    right: 70%; 
-    animation: moveToRight 6s  6s alternate forwards  ; 
+.div2 {
+
+    right: 11%;
+    animation: moveToLeft 6s 3s alternate forwards;
+    top: 40%;
+}
+
+.div3 {
+
+    left: 11%;
+    animation: moveToRight 6s 6s alternate forwards;
     top: 80%;
 }
 
-.div4{
-    background-color: rgb(30, 255, 0);  
-    right: 0%; 
-    animation: moveToLeft 6s  8s alternate forwards ; 
+.div4 {
+
+    right: 11%;
+    animation: moveToLeft 6s 8s alternate forwards;
     top: 120%;
 }
 
+.div5 {
+
+    left: 11%;
+    animation: moveToRight 6s 10s alternate forwards;
+    top: 155%;
+}
+
+.div6 {
+
+    right: 11%;
+    animation: moveToLeft 6s 12s alternate forwards;
+    top: 195%;
+}
+
+.div7 {
+
+    left: 11%;
+    animation: moveToRight 6s 14s alternate forwards;
+    top: 270%;
+}
+
+.div8 {
+
+    right: 11%;
+    animation: moveToLeft 6s 16s alternate forwards;
+    top: 235%;
+}
 
 @keyframes moveToRight {
-    0%, 33.33% {
-        right: 70%; 
+
+    0%,
+    33.33% {
+        left: 11%;
     }
-    66.66%, 100% {
-        right: 0; 
+
+    66.66%,
+    100% {
+        left: 85%;
     }
 }
 
 @keyframes moveToLeft {
-    0%, 33.33% {
-        right: 0; 
+
+    0%,
+    33.33% {
+        right: 11%;
     }
-    66.66%, 100% {
-        right: 70%; 
+
+    66.66%,
+    100% {
+        right: 85%;
     }
 }
